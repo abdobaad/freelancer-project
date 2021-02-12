@@ -1,0 +1,12 @@
+.services_container {
+  padding-top: 2rem;
+  display: flex;
+  .cart--container {
+    width: 30%;
+    padding: 1rem;
+  }
+  .data--container {
+    padding: 1rem;
+    width: 70%;
+  }
+}

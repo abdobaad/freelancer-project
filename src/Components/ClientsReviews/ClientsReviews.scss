@@ -1,0 +1,62 @@
+.reviews-container {
+  font-family: "Roboto", sans-serif;
+  .title {
+    font-size: 1.2rem;
+    color: #303030;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    width: 5rem;
+
+    span {
+      font-family: "Roboto", sans-serif;
+    }
+    span.active {
+      font-weight: 500;
+    }
+  }
+
+  .review_container {
+    margin: 1rem 0 0 0;
+    .review_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .client {
+        display: flex;
+        align-items: center;
+        .client_img {
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: calc(50px - 2rem);
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+        .client_name {
+          color: #303030;
+          font-weight: 600;
+          margin-right: 10px;
+          font-size: 1.1rem;
+        }
+        .review_time {
+          font-size: 0.8rem;
+          color: #85858b;
+        }
+      }
+      .work_rate {
+      }
+    }
+
+    .review_text {
+      margin-left: 50px;
+
+      p {
+        color: #303030;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 80%;
+  margin: 0 auto;
+  background: #f6fcfe 0% 0% no-repeat padding-box;
+
+  .logo_container {
+    .logo {
+    }
+  }
+  .navigation_container {
+    display: flex;
+    .navigation_list {
+      display: flex;
+      .item {
+        margin: 0 10px;
+        span {
+          color: #4d4d4f;
+          font-weight: 400;
+          font-family: "Roboto", sans-serif;
+        }
+        span.active {
+          font-weight: 500;
+        }
+      }
+    }
+    .use_language {
+      margin-left: 2rem;
+    }
+  }
+}
