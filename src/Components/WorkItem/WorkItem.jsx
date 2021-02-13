@@ -7,7 +7,7 @@ const WorkItem = ({title,icon,data}) => {
     return (
         <div className="work-item-cont">
            
-                <img className="icon" src={icon} />
+                <img id="icon" className="icon" src={icon} />
                 <p className="title">{UpperCaseFirstLetter(title)}:</p>
                 <span className="data">{data}</span>
           

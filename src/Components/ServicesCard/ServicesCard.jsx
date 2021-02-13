@@ -1,9 +1,10 @@
 import React from 'react';
 import Button from '../Button/Button';
-import image1 from "../../resources/work3.jpg";
+import HeartIcon from "../../resources/icons/heart.svg";
+import RateIcon from "../../resources/icons/star.svg";
 
 import "./ServicesCard.scss"
-const ServicesCard = ({image,userName,job,service_desc,freelancerImage,rates,sold,price}) => {
+const ServicesCard = ({image,userName,job,service_desc,freelancerImage,stars,sold,price}) => {
     return (
         <div className="service_card-container">
         <div  className="img_container">
@@ -22,13 +23,18 @@ const ServicesCard = ({image,userName,job,service_desc,freelancerImage,rates,sol
         </div>
         <div className="service_info">
            <div className="left">
-           <div className="rate">{rates}</div>
+           <div className="rate">
+               <img src={RateIcon} alt="rate" id="icon"/>
+               <p>{stars}</p>
+           </div>
             <div className="sold">{sold} sold</div>
            </div>
             <div className="price">${price}</div>
         </div>
         <div className="buttons_flex">
-        <div className="like_btn">X</div>
+        <div className="like_btn">
+            <img id="icon" src={HeartIcon} alt="like" />
+        </div>
         <Button text="view"/>
         </div>
         </div>

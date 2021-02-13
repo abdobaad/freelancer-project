@@ -5,7 +5,7 @@ import { UpperCaseFirstLetter } from '../Utils/capitlize';
 import { additional_info, additional_userData, UserCart_Data } from '../Utils/data';
 
 //icons
-import Location from "../../resources/icons/pin1.svg"
+import Location from "../../resources/icons/pin.svg"
 
 import "./UserCart.scss"
 
@@ -37,7 +37,8 @@ const UserCart = () => {
                               <img id="icon" src={data.icon} alt={data.title}/>
                               <p>
                               {`${UpperCaseFirstLetter(data.title)} :`}
-                              <div id="info">{additional_info[i]}</div>
+                              {console.log(additional_info[i])}
+                              <div id="info">{typeof additional_info[i] === "string" ? additional_info[i] : additional_info[i].join(', ')}</div>
                               </p>
                           </div>
                       </div>
