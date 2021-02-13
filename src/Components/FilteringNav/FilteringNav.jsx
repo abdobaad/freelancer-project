@@ -8,7 +8,7 @@ const FilteringNav = () => {
     const [Active,setActive] = useState('design')
     return (
         <div className="upper_cont">
-            <div className="filtering_container">
+            <div id="max_container" className="filtering_container">
           { Filtering_data.map(item=>(
               <div className="filter-up">
                   <span className="filter_item">

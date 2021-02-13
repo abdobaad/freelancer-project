@@ -8,7 +8,7 @@ const Layout = ({children}) => {
     return (
         <>
         <Header />
-        <div className="layout_container">
+        <div id="max_container" className="layout_container">
             {children}
         </div>
         <Footer />

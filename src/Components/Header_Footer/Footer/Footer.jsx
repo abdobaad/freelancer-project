@@ -5,7 +5,7 @@ import { Footer_data } from '../../Utils/data';
 import "./Footer.scss"
 const Footer = () => {
     return (
-       <footer className="footer--container">
+       <footer id="max_container" className="footer--container">
 <div className="top">
     <div className="footer_list">
         {Footer_data.map(item=>(

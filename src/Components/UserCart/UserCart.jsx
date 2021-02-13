@@ -6,6 +6,7 @@ import { additional_info, additional_userData, UserCart_Data } from '../Utils/da
 
 //icons
 import Location from "../../resources/icons/pin.svg"
+import StarIcon from "../../resources/icons/goldstar.svg";
 
 import "./UserCart.scss"
 
@@ -21,7 +22,8 @@ const UserCart = () => {
                     {`${UpperCaseFirstLetter(UserCart_Data.firstname)} ${UpperCaseFirstLetter(UserCart_Data.lastname)}`}
                   </p>
                   <div className="rates">
-                      {UserCart_Data.rates}
+                     <span> {UserCart_Data.rates}</span>
+                     <img src={StarIcon} alt="star" id="icon"/>
                   </div>
                </div>
                <h3 className="user_skill">{UpperCaseFirstLetter(UserCart_Data.job)}</h3>

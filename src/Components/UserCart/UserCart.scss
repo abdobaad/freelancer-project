@@ -27,8 +27,15 @@
       }
       .rates {
         position: absolute;
-        top: 5px;
-        right: 3px;
+        top: 8px;
+        right: 0px;
+        display: flex;
+        span {
+          color: #e7ef00;
+        }
+        #icon {
+          margin: 0 0 0 3px;
+        }
       }
     }
 

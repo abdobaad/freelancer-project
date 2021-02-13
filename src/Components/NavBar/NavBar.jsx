@@ -10,7 +10,7 @@ const NavBar = () => {
     const [activeLink,setActiveLink] = useState('services')
     return (
         <div style={{ backgroundColor: "#f6fcfe"}} className="upper_cont">
-            <div className="navbar_container">
+            <div id="max_container" className="navbar_container">
            <div  className="logo_container">
               <span className="logo">
                   FORLANSO

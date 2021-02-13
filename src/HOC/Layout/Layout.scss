@@ -1,5 +1,10 @@
 $contianer-width: 90%;
 .layout_container {
   width: $contianer-width;
+
   margin: 0 auto;
+}
+
+#max_container {
+  max-width: 1400px;
 }
