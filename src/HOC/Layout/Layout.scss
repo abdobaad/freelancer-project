@@ -1,10 +1,42 @@
-$contianer-width: 90%;
+$large__container: 98%;
+$medium__container: 90%;
+$small__container: 80%;
 .layout_container {
-  width: $contianer-width;
-
+  width: $medium__container;
   margin: 0 auto;
+
+  .profile_title {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: "Roboto";
+    letter-spacing: 1px;
+    color: #4a4b4a;
+    display: none;
+  }
 }
 
 #max_container {
   max-width: 1400px;
+}
+
+@media screen and (max-width: 1256px) {
+  .layout_container {
+    width: $large__container;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .layout_container {
+    width: $small__container;
+    .profile_title {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .layout_container {
+    width: $medium__container;
+  }
 }

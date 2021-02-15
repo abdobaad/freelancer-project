@@ -9,3 +9,23 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .work_info-container {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .work_info-container {
+    .to_middle {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .work-item-cont {
+        justify-content: center;
+        width: 50%;
+      }
+    }
+  }
+}

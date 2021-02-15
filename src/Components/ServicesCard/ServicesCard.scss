@@ -1,103 +1,125 @@
-.service_card-container {
-  width: calc(100% / 3);
-  margin: 1rem 0.5rem 1rem 0;
-  box-shadow: 3px 3px 10px #0000001a;
-  border-radius: 6px;
-  overflow: hidden;
-  .img_container {
-    height: 200px;
-    .service_image {
-      width: 100%;
-      height: 100%;
-      background-size: cover;
-      background-position: center;
-    }
-  }
-
-  .info--container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 12px 0 0 0;
-    .freelance_data {
-      display: flex;
-      align-items: center;
-      .freelancer_image {
-        height: 2rem;
-        width: 2rem;
-        border-radius: 50%;
-
-        img {
-          height: 100%;
-          width: 100%;
-        }
-      }
-      .name_job {
-        display: flex;
-        flex-direction: column;
-        margin-left: 5px;
-        font-family: "Roboto", sans-serif;
-
-        .freelancer_name {
-          margin: 0 0 2px 0;
-          color: #4d4d4f;
-        }
-        .freelancer_job {
-          color: #b8b8b9;
-        }
+.services_list {
+  .service_card-container {
+    width: calc(100% / 3);
+    margin: 1rem 0.5rem 1rem 0;
+    box-shadow: 3px 3px 10px #0000001a;
+    border-radius: 6px;
+    overflow: hidden;
+    .img_container {
+      height: 200px;
+      .service_image {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
       }
     }
 
-    .service_description {
-      color: #303030;
-      margin: 10px 0;
-    }
-
-    .service_info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 10px 0;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #d3d3d34a;
-      .left {
+    .info--container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 12px 0 0 0;
+      .freelance_data {
         display: flex;
         align-items: center;
-        .rate {
-          display: flex;
-          align-items: center;
+        .freelancer_image {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
           font-size: 0.9rem;
-          margin-right: 11px;
-          color: #00aeef;
 
-          #icon {
-            margin-right: 2px;
+          img {
+            height: 100%;
+            width: 100%;
           }
         }
-        .sold {
-          color: #b8b8b9;
+        .name_job {
+          display: flex;
+          flex-direction: column;
+          margin: 0 5px;
+          font-size: 0.9rem;
+          font-family: "Roboto", sans-serif;
+
+          .freelancer_name {
+            margin: 0 0 2px 0;
+            color: #4d4d4f;
+          }
+          .freelancer_job {
+            color: #b8b8b9;
+          }
+        }
+      }
+
+      .service_description {
+        color: #303030;
+        margin: 10px 0;
+      }
+
+      .service_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #d3d3d34a;
+        .left {
+          display: flex;
+          align-items: center;
+          .rate {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            margin-right: 11px;
+            color: #00aeef;
+
+            #icon {
+              margin-right: 2px;
+            }
+          }
+          .sold {
+            color: #b8b8b9;
+            font-size: 0.85rem;
+          }
+        }
+        .price {
+          color: #303030;
+          font-weight: 600;
           font-size: 0.85rem;
         }
       }
-      .price {
-        color: #303030;
-        font-weight: 600;
-        font-size: 0.85rem;
+
+      .buttons_flex {
+        display: flex;
       }
     }
+  }
+}
 
-    .buttons_flex {
+@media screen and (max-width: 1000px) {
+  .services_list {
+    .cards_list {
       display: flex;
-      .like_btn {
-        width: 30%;
+      flex-direction: column;
+      .service_card-container {
+        width: 100%;
+        margin: 0 0 1rem 0;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 35px;
-        background-color: #f8f8f8;
-        margin-right: 8px;
-        border-radius: 6px;
-        #icon {
-          margin: 0;
+        .img_container {
+          height: auto;
+          width: 45%;
+
+          .service_image {
+          }
+        }
+        .info--container {
+          width: 55%;
+          margin: 0 auto;
+          padding: 12px;
+
+          .btn,
+          .like_btn {
+            margin-bottom: 0;
+          }
         }
       }
     }

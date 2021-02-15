@@ -1,6 +1,7 @@
 .services_container {
   padding-top: 2rem;
   display: flex;
+
   .cart--container {
     width: 25%;
     padding: 1rem;
@@ -8,5 +9,33 @@
   .data--container {
     padding: 1rem;
     width: 75%;
+  }
+}
+
+.services_container {
+  .cart--container {
+    width: 30%;
+    padding: 1rem 0;
+  }
+  .data--container {
+    width: 70%;
+  }
+}
+
+.reverse_to_arabic {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 860px) {
+  .services_container {
+    flex-direction: column;
+    align-items: center;
+
+    .cart--container {
+      width: 100%;
+    }
+    .data--container {
+      width: 100%;
+    }
   }
 }

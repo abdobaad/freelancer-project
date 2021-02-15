@@ -5,15 +5,14 @@
     padding-bottom: 10px;
     font-size: 1.2rem;
     font-weight: 600;
-
-    width: 5rem;
   }
 
-  span.active {
+  p.active {
     font-weight: 500;
+    margin-bottom: 5px;
   }
   .cards_list {
-    margin-top: 41px;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;

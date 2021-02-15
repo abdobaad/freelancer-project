@@ -1,21 +1,23 @@
 import React from 'react';
-import WorkItem from '../WorkItem/WorkItem';
-
+import WorkItem from '../../WorkItem/WorkItem';
+import {ArrayByLanguage} from "../ArrayByLanguage"
 //icons
-import MoneyIcon from "../../resources/icons/hand.svg"
-import PinIcon from "../../resources/icons/paper-push-pin.svg"
-import RedoIcon from "../../resources/icons/redo.svg"
+
 
 //styles
 import "./WorkInfo.scss"
+import { WorkInfo_Nav } from '../data';
 
 const WorkInfo = () => {
     return (
         <div className="work_info-container">
             <div className="to_middle">
-            <WorkItem title='total Earn' icon={MoneyIcon} data={50} />
-            <WorkItem title='order Sold' icon={PinIcon} data={5} />
-            <WorkItem title='Order In Progress' icon={RedoIcon} data={5} />
+            {ArrayByLanguage(WorkInfo_Nav).map((item,i)=>(
+             <div key={i}  className="work-item-cont">
+             <WorkItem index={i} title={item.name} icon={item.icon} data={item.data}/>
+             </div>
+             ) 
+            )}
             </div>
         </div>
     );

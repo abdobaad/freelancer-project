@@ -5,18 +5,23 @@
     color: #303030;
     margin-bottom: 1rem;
     padding: 1rem 0;
-    width: 5rem;
 
-    span {
+    p {
       font-family: "Roboto", sans-serif;
     }
-    span.active {
+    p.active {
+      margin-bottom: 5px;
       font-weight: 500;
     }
   }
 
   .review_container {
     margin: 1rem 0 0 0;
+
+    .mg_bottom:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
     .review_header {
       display: flex;
       align-items: center;
@@ -51,7 +56,12 @@
     }
 
     .review_text {
-      margin-left: 50px;
+      p.en {
+        margin-left: 50px;
+      }
+      p.ar {
+        margin-right: 50px;
+      }
 
       p {
         color: #303030;

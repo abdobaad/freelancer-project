@@ -1,6 +1,7 @@
 import React from 'react';
 
 import RatesIcon from "../../resources/icons/goldstar.svg"
+import { ArrayByLanguage } from '../Utils/ArrayByLanguage';
 import "./RatesStars.scss"
 
 const RatesStars = ({stars}) => {
@@ -9,7 +10,7 @@ const RatesStars = ({stars}) => {
 
     return (
         <div className="review_stars-container">
-        {StarsArray.map(i=>(
+        {ArrayByLanguage(StarsArray).map(i=>(
             <img key={`icon-${i}`} src={RatesIcon} id="icon" alt="star" />
         ))}
         </div>

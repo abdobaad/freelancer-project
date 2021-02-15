@@ -1,3 +1,26 @@
+.upper_cont {
+  .reverse {
+    flex-direction: row-reverse;
+  }
+  .mob_nav--list {
+    .navigation_container {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      align-items: center;
+      padding-bottom: 2rem;
+      .use_language {
+        cursor: pointer;
+      }
+
+      .item {
+        margin: 1rem 0;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
 .navbar_container {
   display: flex;
   justify-content: space-between;
@@ -27,7 +50,24 @@
       }
     }
     .use_language {
+      font-family: "Roboto", sans-serif;
+      color: #4d4d4f;
+      cursor: pointer;
+    }
+
+    .arabic {
+      margin-right: 2rem;
+    }
+    .english {
       margin-left: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .navbar_container {
+    .navigation_container {
+      display: none;
     }
   }
 }

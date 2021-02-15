@@ -26,3 +26,16 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 1113px) {
+  .portfolio-card {
+    width: 200px;
+    height: 202px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .portfolio-card {
+    width: 45%;
+  }
+}

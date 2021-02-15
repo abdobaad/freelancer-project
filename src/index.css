@@ -15,6 +15,12 @@ code {
 #icon {
   width: 1rem;
   height: 1rem;
+}
+
+.icon_left {
+  margin-left: 10px;
+}
+.icon_right {
   margin-right: 10px;
 }
 
@@ -22,4 +28,28 @@ code {
   width: 1rem;
   height: 1rem;
   margin-right: 3px;
+}
+
+.from_right {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.column-from_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text_to_end {
+  text-align: end;
+}
+
+.reverse_items_rowly {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.reverse_items_columnly {
+  display: flex;
+  flex-direction: column-reverse;
 }
